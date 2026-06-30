@@ -31,11 +31,11 @@ document.querySelectorAll('.nav-links a').forEach(link=>{
 
 const themeToggle=document.getElementById('themeToggle');
 const body=document.body;
-if(localStorage.getItem('teacherTheme')==='dark'){body.classList.add('dark');themeToggle.innerHTML='<i class="fas fa-sun"></i>';}
+if(localStorage.getItem('rambabuTheme')==='dark'){body.classList.add('dark');themeToggle.innerHTML='<i class="fas fa-sun"></i>';}
 themeToggle.addEventListener('click',()=>{
     body.classList.toggle('dark');
     const isDark=body.classList.contains('dark');
-    localStorage.setItem('teacherTheme',isDark?'dark':'light');
+    localStorage.setItem('rambabuTheme',isDark?'dark':'light');
     themeToggle.innerHTML=isDark?'<i class="fas fa-sun"></i>':'<i class="fas fa-moon"></i>';
 });
 
@@ -45,12 +45,12 @@ backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}
 
 document.getElementById('contactForm').addEventListener('submit',(e)=>{
     e.preventDefault();
-    alert('✅ धन्यवाद! तपाईंको सन्देश सफलतापूर्वक पठाइएको छ।');
+    alert('✅ Thank you! Your message has been sent successfully.');
     e.target.reset();
 });
 
 new Typed('.typing-text',{
-    strings:['बैठा','Baitha','सर','Sir'],
+    strings:['रामबाबु','Rambabu','बैठा','Baitha','सर','Sir'],
     typeSpeed:100,
     backSpeed:50,
     loop:true
@@ -78,4 +78,5 @@ const observer=new IntersectionObserver((entries)=>{
 },{threshold:0.1});
 document.querySelectorAll('.about-card, .edu-card, .timeline-item, .skill-card, .contact-item').forEach(el=>observer.observe(el));
 
-console.log('✅ Rambabu Baitha Portfolio Loaded!');
+console.log('✅ Rambabu Portfolio Loaded!');
+console.log('🚀 Premium Value: 15 Lakh+');
