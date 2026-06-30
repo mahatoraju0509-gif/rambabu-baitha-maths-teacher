@@ -1,0 +1,12 @@
+﻿{
+    "name": "रामबाबु बैठा - Best Mathematics Teacher Nepal",
+    "short_name": "Rambabu Baitha",
+    "description": "Nepal's Top 1 Mathematics Teacher",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1e40af",
+    "theme_color": "#1e40af",
+    "lang": "ne",
+    "orientation": "portrait-primary",
+    "categories": ["education", "teaching", "mathematics"]
+}
